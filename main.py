@@ -1,6 +1,9 @@
-def main():
-    print("Hello from tds-25t3!")
+from flask import Flask,render_template
 
+app = Falsk(__name__)
 
-if __name__ == "__main__":
-    main()
+@app.route('/')
+def home():
+    return render_template('hi.html')
+
+app.run()
